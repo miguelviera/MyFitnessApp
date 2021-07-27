@@ -1,0 +1,42 @@
+<html>
+    <head>
+    <title>Workout Buddy!</title>
+        <link rel="stylesheet" type="text/css" href="css/style2.css"/>
+        
+    </head>
+    <body>
+        <div id="sidebar">
+            <div id="timer-div">
+                <h1 id="timer"><time>00:00:00</time></h1>
+                <button id="start" class="btn">Start</button>
+                <button id="stop" class="btn">Stop</button>
+                <button id="clear" class="btn">Reset</button>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="header-title">
+                    <h1 id="title">Gym Workout Buddy</h1>
+                    <h2 id="tagline">I'm a web application built to help you design and keep track of your workouts!</h2>
+            </div>
+            <div id="navbar">
+                <ul> 
+                    <li><a href="index.html">Plan your Workout!</a></li>
+                    <li style="float:right"><a class="active" href="workout.html">Let's start your workout!</a></li>
+                </ul>
+            </div>
+            
+            <table id="results-table">
+                <thead>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Done?</th>
+                </thead>
+                <tbody id="results">
+                
+                </tbody>
+            </table>
+        </div>
+        <script src="js/scripts2.js"></script>
+    </body>
+</html>

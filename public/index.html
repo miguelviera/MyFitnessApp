@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <title>Workout Buddy!</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        
+    </head>
+    <body>
+        <div id="sidebar" class="form-div">
+            <p class="sidebar-text">Use this sidebar to add new exercises and edit existing exercises from your workout</p>
+            <form id="myForm">
+                <label for="id">ID:</label>
+                <input id="id" type="text" readonly="readonly" disabled>
+                <label for="exercise">Exercise: </label>
+                <input id="exercise" type="text">
+                <label for="sets">Sets: </label>
+                <input id="sets" type="number">
+                <label for="reps">Reps: </label>
+                <input id="reps" type="number">
+                <button id="save">Add/Save</button>
+            </form>
+        </div>
+        <div id="main-content">
+            <div id="header-title">
+                    <h1 id="title">Gym Workout Buddy</h1>
+                    <h2 id="tagline">I'm a web application built to help you design and keep track of your workouts!</h2>
+            </div>
+            <div id="navbar">
+                <ul> 
+                    <li><a class="active" href="index.html">Plan your Workout!</a></li>
+                    <li style="float:right"><a href="workout.html">Let's start your workout!</a></li>
+                </ul>
+            </div>
+            
+            <table id="results-table">
+                <thead>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="results">
+                
+                </tbody>
+            </table>
+        </div>
+        <script src="js/scripts.js"></script>
+        <script>
+        var request = new XMLHttpRequest();
+    request.open('GET', '/read');
+    request.responseType = 'json';
+    request.onload = function() {
+        console.log(request.response)
+        workout_arr = request.response;
+        build( workout_arr );
+    };
+    request.send();
+        </script>
+    </body>
+</html>

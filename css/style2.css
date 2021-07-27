@@ -1,0 +1,184 @@
+/*
+Header/Title Font
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+/*
+Body Font
+*/
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+
+
+body{
+    background: #ffe;
+    color: #555;
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Karla', sans-serif;
+}
+
+#myForm{
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+/* Style page content */
+#main-content {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#tagline{
+    font-style: italic;
+    margin-top: 0;
+    font-size: 1em;
+}
+
+p, td, th{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #333;
+}
+
+/*
+    SIDEBAR
+*/
+#sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(106, 126, 133);
+    box-shadow: 2px 2px 4px #ccc;
+}
+
+
+.sidebar-text{
+    margin: 0;
+    width: 100%;
+    padding: 20px 10% 20px;
+    box-sizing: border-box;
+    background-color: rgb(153, 166, 177);
+    color: #ffe;
+}
+
+#timer-div{
+    width: 80%;
+    margin: 60% auto;
+    text-align: center;
+    align-content: center;
+}
+
+#timer-div h1{
+    color: white;
+}
+
+#timer-div .btn{
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#timer-div .btn:hover{
+    background: rgb(201, 201, 201)
+}
+/*
+    MAIN PAGE
+*/
+
+#results-table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    
+}
+
+td{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+td button{
+    display: block;
+    margin: auto;
+}
+
+th, td{
+    padding: 10px;
+}
+
+
+tbody tr{
+    background-color: rgb(153, 166, 177);
+    border: 1px solid #333;
+}
+
+tbody tr:hover{
+    background-color: #bbb;
+}
+
+#header-title{
+    background: #aaa;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/*
+    NAVBAR
+*/
+
+#navbar{
+    background: #333;
+    color: white;
+    vertical-align: middle;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li {
+    width: 50%;
+    font-size: 2em;
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: #3fed54;
+}
+
+.active {
+    background-color: #3fed54;
+}
+
+
+
+
