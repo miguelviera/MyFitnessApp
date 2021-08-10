@@ -1,8 +1,7 @@
 # Workout Buddy
 *A Full Stack database-enabled Web Application using **HTML/CSS/JS** and **Node.js/SQLite**. Workout buddy is a web app built to help people design and keep track of workouts. It enables users to create custom workout routines, keep track of progress during a workout and finally, see how much time they spend on workouts.* <br><br>
 
-**Developer: Harsh Rana**
-Link: https://a3-hr23232323.herokuapp.com/
+
 
 ## Technical Achievements
 - **Workout timer**: I customized and incorporated a timer script designed by Daniel Hug (link in scripts/scripts2.js) as part of the app to give the users an ability to track their workout times. The user could also stop and reset the timer. The reset button would also reset the workout progress of the user. 
