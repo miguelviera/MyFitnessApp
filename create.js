@@ -1,4 +1,4 @@
-
+var sql = require('sqlite3');
 
 // create database
 var db = new sql.Database('workout.sqlite');
