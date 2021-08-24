@@ -1,3 +1,9 @@
+var http = require('http')
+  , fs   = require('fs')
+  , url  = require('url')
+  , sql  = require('sqlite3')
+  , port = 8080
+  , debug = true
 
 
 // db setup
