@@ -1,4 +1,8 @@
-
+// init, or what we need to build the results page to begin with
+var workout_arr = [];
+window.onload = function () {
+    read();
+}
 
 // save, encode user form input as JSON and call update
 document.getElementById('save').addEventListener('click', function(evt) {
