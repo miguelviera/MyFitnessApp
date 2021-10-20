@@ -5,6 +5,7 @@ window.onload = function () {
 }
 
 
+
 // save, encode user form input as JSON and call update
 document.getElementById('save').addEventListener('click', function(evt) {
     var workout = {};
