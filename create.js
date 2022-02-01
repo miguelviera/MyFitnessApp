@@ -1,6 +1,5 @@
 var sql = require('sqlite3');
 
-
 var db = new sql.Database('workout.sqlite');
 db.serialize(function() {
 
