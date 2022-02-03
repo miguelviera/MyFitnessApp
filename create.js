@@ -1,7 +1,6 @@
 
 var db = new sql.Database('workout.sqlite');
 db.serialize(function() {
-
   // making the table
   db.run("CREATE TABLE workout (id varchar(100), exercise varchar(100), sets integer, reps integer)");
 
